@@ -1,0 +1,175 @@
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1%;
+  overflow-x: hidden;
+}
+#menu {
+  background-color: rgba(202, 202, 202, 0.5);
+  position: absolute;
+  width: 98%;
+  z-index: 9999;
+  text-align: center;
+  padding: 1%;
+}
+#menu a {
+  color: white;
+
+}
+#menu span {
+  padding: 2.5%;
+}
+#box_text {
+  width: 100%;
+  background-color: white;
+}
+#box_text p {
+  font-size: 100%;
+}
+#contacts {
+  padding: 3% 0% 0.5% 0%;
+  background-color: #3c3a3a;
+  text-align: center;
+  font-size: 120%;
+
+}
+#contacts p {
+  color: white;
+  font-size: 80%;
+  font-weight: 500;
+}
+.sign {
+  width: 300px;
+  border: 1px solid #333;
+  padding: 1%;
+  margin: 2% 5%;
+  background: #f0f0f0;
+}
+.add_item a {
+  color:#000;
+  float: right;
+  margin-bottom: 2%;
+  font-family: monospace;
+}
+.shopping_list {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+.shopping_list td,
+.shopping_list th {
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+}
+#catalog{
+  width: 100%;
+}
+figure {
+  display: inline-block;
+margin: 0% 4%;
+}
+.scrollup {
+  width:40px;
+  height:40px;
+  opacity:0.5;
+  position:fixed;
+  bottom: 5%;
+right: 2%;
+  display:none;
+  text-indent:-9999px;
+  background: url('icon_top.png') no-repeat;
+}
+.price {
+  color:#000;
+  font-size:80%;
+  margin: 1% 0%;
+  float: right;
+}
+.p_table {
+  text-align:right;
+  font-family: Lobster;
+}
+input{
+  width: 70%;
+  font-family: Lobster;
+}
+textarea {
+  width: 70%;
+  line-height: 60%;
+  font-family: Lobster;
+}
+dialog {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  color: #775050;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  background-color: #f3e1e1;
+  box-shadow: 0px 0px 15px 0px black;
+}
+label {position: relative;
+  display: inline-block;
+  min-width: 150px;
+}
+#bag{
+  font-size:20px;
+  text-align: center;
+}
+#cart{
+  text-align: center;
+}
+.item_box {
+  position: relative;
+}
+figure   p  {
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  bottom: 100px;
+  left: 70px;
+opacity: 0;
+  color: white;
+  transition: 1s;
+}
+figure:hover p {
+  opacity: 1;
+}
+figure:hover img {
+  filter: brightness(50%);
+  transition: 1s;
+}
+p  a {
+  color: white;
+  border: 1px white;
+  padding: 5px;
+}
+#photo {
+  position: relative;
+  text-align: center;
+}
+#photo p {
+  text-align: center;
+margin-top: 1%;
+
+}
+
+.btn_interior {
+  color:#fff;
+  background-color:#ec971f;
+  border-color:#eb9316;
+    padding: 0.5%;
+    border-radius: 0.5em;
+    font-size: 80%;
+}
+
+.logo{
+  position: relative;
+}
+    .center{
+        text-align: center;
+        top: 50%;
+        color: white;
+        font-size: 200%;
+        font-weight: 900;
+      }

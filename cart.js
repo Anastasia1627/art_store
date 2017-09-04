@@ -76,5 +76,5 @@
   /* Очистить корзину */
   addEvent(d.getElementById('clear_cart'), 'click', function(e){
   	localStorage.removeItem('cart');
-  	cartCont.innerHTML = 'Корзина очишена.';
+  	cartCont.innerHTML = 'Корзина очищена.';
   });

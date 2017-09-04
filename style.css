@@ -3,21 +3,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 1%;
   overflow-x: hidden;
-}
+  }
 #menu {
   background-color: rgba(202, 202, 202, 0.5);
   position: absolute;
   width: 98%;
-  z-index: 9999;
   text-align: center;
   padding: 1%;
+  z-index: 10;
 }
 #menu a {
-  color: white;
-
+ color: white;
+ font-size: 120%;
 }
 #menu span {
   padding: 2.5%;
+}
+h1 {
+ text-align: center;
+ font-size: 150%;
+ margin-top: 3%;
+}
+h2 {
+  text-align:center;
+  font-size:150%;
 }
 #box_text {
   width: 100%;
@@ -27,20 +36,17 @@ body {
   font-size: 100%;
 }
 #contacts {
-  padding: 3% 0% 0.5% 0%;
+  padding: 2% 0% 0.1% 0%;
   background-color: #3c3a3a;
   text-align: center;
-  font-size: 120%;
-
 }
 #contacts p {
   color: white;
   font-size: 80%;
-  font-weight: 500;
 }
 .sign {
   width: 300px;
-  border: 1px solid #333;
+  border: 2px solid #333;
   padding: 1%;
   margin: 2% 5%;
   background: #f0f0f0;
@@ -51,22 +57,12 @@ body {
   margin-bottom: 2%;
   font-family: monospace;
 }
-.shopping_list {
-  width: 100%;
-  margin-top: 10px;
-  border-collapse: collapse;
-}
-.shopping_list td,
-.shopping_list th {
-  padding: 10px;
-  border: 1px solid #AAAAAA;
-}
-#catalog{
+#catalog {
   width: 100%;
 }
 figure {
   display: inline-block;
-margin: 0% 4%;
+  margin: 0% 4%;
 }
 .scrollup {
   width:40px;
@@ -74,7 +70,7 @@ margin: 0% 4%;
   opacity:0.5;
   position:fixed;
   bottom: 5%;
-right: 2%;
+  right: 2%;
   display:none;
   text-indent:-9999px;
   background: url('icon_top.png') no-repeat;
@@ -87,30 +83,30 @@ right: 2%;
 }
 .p_table {
   text-align:right;
-  font-family: Lobster;
 }
 input{
   width: 70%;
-  font-family: Lobster;
 }
 textarea {
-  width: 70%;
-  line-height: 60%;
-  font-family: Lobster;
+  width: 65%;
+  line-height: 70%;
 }
 dialog {
+  width: 30%;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
-  color: #775050;
   position: fixed;
   top: 0px;
   bottom: 0px;
-  background-color: #f3e1e1;
+  background-color: #ded8d8;
   box-shadow: 0px 0px 15px 0px black;
 }
-label {position: relative;
+label {
+  position: relative;
   display: inline-block;
-  min-width: 150px;
+  min-width: 25%;
+  margin-bottom: 1%;
+  vertical-align: text-bottom;
 }
 #bag{
   font-size:20px;
@@ -122,13 +118,13 @@ label {position: relative;
 .item_box {
   position: relative;
 }
-figure   p  {
+figure.item_box  p  {
   position: absolute;
   text-align: center;
   margin: auto;
   bottom: 100px;
   left: 70px;
-opacity: 0;
+  opacity: 0;
   color: white;
   transition: 1s;
 }
@@ -142,7 +138,7 @@ figure:hover img {
 p  a {
   color: white;
   border: 1px white;
-  padding: 5px;
+  padding: 2%;
 }
 #photo {
   position: relative;
@@ -150,26 +146,62 @@ p  a {
 }
 #photo p {
   text-align: center;
-margin-top: 1%;
-
+  margin-top: 1%;
 }
-
-.btn_interior {
-  color:#fff;
-  background-color:#ec971f;
-  border-color:#eb9316;
-    padding: 0.5%;
-    border-radius: 0.5em;
-    font-size: 80%;
+.center{
+  text-align: center;
+  top: 50%;
+  color: white;
+  font-size: 200%;
+  font-weight: 900;
 }
-
-.logo{
-  position: relative;
+.shopping_list {
+  text-align: center;
+  width: 40%;
+  border-collapse: collapse;
 }
-    .center{
-        text-align: center;
-        top: 50%;
-        color: white;
-        font-size: 200%;
-        font-weight: 900;
-      }
+.shopping_list td,
+.shopping_list th {
+padding: 2%;
+border: 1px solid #000;
+text-align: center;
+background-color: rgba(202, 202, 202, 0.5);
+}
+th {
+  color: black;
+}
+#catalog p{
+text-align: center;
+}
+.btn{
+width: 100%;
+font-size: 120%;
+background-color: #7d6666;
+color: white;
+padding: 5%;
+margin-bottom: 0%;
+}
+#checkout:hover,
+#show:hover,
+#clear_cart:hover{
+text-decoration: underline;
+}
+h3 {
+  text-align:center;
+  font-size:150%;
+  margin-bottom: 3%;
+  background-color: rgba(202, 202, 202, 0.5);
+  position: absolute;
+  width: 98%;
+  padding: 0.5%;
+}
+#cart_content{
+text-align: -webkit-center;
+font-size: 80%;
+}
+form {
+  text-align: center;
+}
+#link a{
+  padding: 0;
+}

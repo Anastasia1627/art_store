@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type='text/javascript' src='scroll.js'></script>
+  <script type='text/javascript' src='order.js'></script>
+  <script type='text/javascript' src='cart.js'></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,86 +33,99 @@
   <div id="catalog">
     <figure class="item_box">
       <img class="sign" src ="img/1.jpg" alt ="picture">
-      <p> <span class="item_title"> Взгляд в будущее </span> </br>
-        <span> Цена: <span class="item_price"> 1200 </span> BYN </br>
-        <a href="#bag" class="add_item" data-id="1"> Добавить в корзину </a> </p>
-      </figure>
-      <figure class="item_box">
-        <img class="sign" src ="img/2.jpg" alt ="picture">
-        <p> <span class="item_title"> Букет розовых пионов </span> </br>
-          <span> Цена: <span class="item_price"> 800 </span> BYN </br>
-          <a href="#bag" class="add_item" data-id="2"> Добавить в корзину </a> </p>
-        </figure>
-        <figure class="item_box">
-          <img class="sign" src ="img/3.jpg" alt ="picture">
-          <p> <span class="item_title"> Мэри </span> </br>
-            <span> Цена: <span class="item_price"> 700 </span> BYN </br>
-            <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a> </p>
-          </figure>
-          <figure class="item_box">
-            <img class="sign" src ="img/4.jpg" alt ="picture">
-            <p> <span class="item_title"> Элизабет </span> </br>
-              <span> Цена: <span class="item_price"> 800 </span> BYN </br>
-              <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a> </p>
-            </figure>
-            <figure class="item_box">
-              <img class="sign" src ="img/5.jpg" alt ="picture">
-              <p> <span class="item_title"> Город на воде </span> </br>
-                <span> Цена: <span class="item_price"> 1100 </span> BYN </br>
-                <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a> </p>
-              </figure>
-              <figure class="item_box">
-                <img class="sign" src ="img/6.jpg" alt ="picture">
-                <p> <span class="item_title"> Бал </span> </br>
-                  <span> Цена: <span class="item_price"> 600 </span> BYN </br>
-                  <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a> </p>
-                </figure>
-                <figure class="item_box">
-                  <img class="sign" src ="img/7.jpg" alt ="picture">
-                  <p> <span class="item_title"> Город после дождя </span> </br>
-                    <span> Цена: <span class="item_price"> 1000 </span> BYN </br>
-                    <a href="#bag" class="add_item" data-id="4"> Добавить в корзину </a> </p>
-                  </figure>
-                  <figure class="item_box">
-                    <img class="sign" src ="img/8.jpg" alt ="picture">
-                    <p> <span class="item_title"> Ангел </span> </br>
-                      <span> Цена: <span class="item_price"> 900 </span> BYN </br>
-                      <a href="#bag" class="add_item" data-id="5"> Добавить в корзину </a> </p>
-                    </figure>
-                    <figure class="item_box">
-                      <img class="sign" src ="img/9.jpg" alt ="picture">
-                      <p> <span class="item_title"> Свет </span> </br>
-                        <span> Цена: <span class="item_price"> 800 </span> BYN </br>
-                        <a href="#bag" class="add_item" data-id="6"> Добавить в корзину </a> </p>
-                      </figure>
-                    </div>
-                      <div id="bag">
-                        <h3> Корзина </h3>
-                      </div>
-                      <p class="btn"><a id="checkout"> Товары в корзине </a><a id="clear_cart"> Очистить корзину </a><br><br><a id="show"> Оформление заказа </a><br><br><a id="cart_content"></a></p>
-                      <dialog id="window" class="window" onclick="document.getElementById('overlay').style.display='none';">
-                        <p style="text-align:center" > <b> Оформление заказа </b> <button style="position: absolute; margin: -2% 0% 0% 20%" id="close"> &Chi; </button> </p>
-                        <div>
-                          <p> <label> ФИО: </label> <input type="text"/> </p>
-                          <p> <label> Телефон: </label> <input type="tel" placeholder="+375-(__)-___-__-__"/> </p>
-                          <p> <label> Email: </label> <input type="email"  placeholder="example@gmail.com"/> </p>
-                          <p> <label> Адрес: </label> <input type="text"/> </p>
-                          <p> <label> Комментарий: </label>  <textarea placeholder="Ваш комментарий"></textarea> </p>
-                        </div>
-                        <form>
-                          <input type="button" value="Отправить заказ" onClick="order()">
-                        </form>
-                      </dialog>
-                      <script type='text/javascript' src='order.js'></script>
-                    <script type='text/javascript' src='order.js'></script>
-                  <script type='text/javascript' src='cart.js'></script>
-                  <div id="contacts">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.1212550490295!2d27.537853715589833!3d53.9118211801014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf8d97ff9c21%3A0x2192bf735450055d!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNC40YLQtdC70LXQuSAyNywg0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sby!4v1503750224311" width="25%" height="10%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <p><b>Тел:</b> +375251234567 Ефимов Алексей Петрович <br><b> Адрес мастерской:</b> 220055 г.Минск, пр-т Победителей, д. 27 <br><b> E-mail:</b> efimov_aleksei@gmail.com <br> Copyright &copy; 2017 </p>
-                    <div>
-                      <p id="link"> <a href="http://www.vk.com" target="_blank"> <img src="vk.png"></a><a href="http://www.instagram.com" target="_blank"> <img src="instagram.png"></a><a href="http://www.facebook.com" target="_blank"> <img src="facebook.png"></a></p>
-                    </div>
-                  </div>
-                  <a href="#" class="scrollup">Наверх</a>
-                </body>
-                </html>
+      <p>
+        <span class="item_title"> Взгляд в будущее </span> </br><span> Цена: <span class="item_price"> 1200 </span> BYN </br><a href="#bag" class="add_item" data-id="1"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/2.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Букет розовых пионов </span> </br>
+        <span> Цена: <span class="item_price"> 800 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="2"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/3.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Мэри </span> </br>
+        <span> Цена: <span class="item_price"> 700 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/4.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Элизабет </span> </br>
+        <span> Цена: <span class="item_price"> 800 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/5.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Город на воде </span> </br>
+        <span> Цена: <span class="item_price"> 1100 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/6.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Бал </span> </br>
+        <span> Цена: <span class="item_price"> 600 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="3"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/7.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Город после дождя </span> </br>
+        <span> Цена: <span class="item_price"> 1000 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="4"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/8.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Ангел </span> </br>
+        <span> Цена: <span class="item_price"> 900 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="5"> Добавить в корзину </a>
+      </p>
+    </figure>
+    <figure class="item_box">
+      <img class="sign" src ="img/9.jpg" alt ="picture">
+      <p>
+        <span class="item_title"> Свет </span> </br>
+        <span> Цена: <span class="item_price"> 800 </span> BYN </br>
+        <a href="#bag" class="add_item" data-id="6"> Добавить в корзину </a>
+      </p>
+    </figure>
+  </div>
+  <div id="bag">
+    <h3> Корзина </h3>
+  </div>
+  <p class="btn"><a id="checkout"> Товары в корзине </a><a id="clear_cart"> Очистить корзину </a><br><br><a id="show"> Оформление заказа </a><br><br><a id="cart_content"></a></p>
+  <dialog id="window" class="window" onclick="document.getElementById('overlay').style.display='none';">
+    <p style="text-align:center" > <b> Оформление заказа </b> <button style="position: absolute; margin: -2% 0% 0% 20%" id="close"> &Chi; </button> </p>
+    <div>
+      <p> <label> ФИО: </label> <input type="text"/> </p>
+      <p> <label> Телефон: </label> <input type="tel" placeholder="+375-(__)-___-__-__"/> </p>
+      <p> <label> Email: </label> <input type="email"  placeholder="example@gmail.com"/> </p>
+      <p> <label> Адрес: </label> <input type="text"/> </p>
+      <p> <label> Комментарий: </label>  <textarea placeholder="Ваш комментарий"></textarea> </p>
+    </div>
+    <form>
+      <input type="button" value="Отправить заказ" onClick="order()">
+    </form>
+  </dialog>
+  <div id="contacts">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.1212550490295!2d27.537853715589833!3d53.9118211801014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf8d97ff9c21%3A0x2192bf735450055d!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNC40YLQtdC70LXQuSAyNywg0JzQuNC90YHQuiwg0JHQtdC70LDRgNGD0YHRjA!5e0!3m2!1sru!2sby!4v1503750224311" width="25%" height="10%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p><b>Тел:</b> +375251234567 Ефимов Алексей Петрович <br><b> Адрес мастерской:</b> 220055 г.Минск, пр-т Победителей, д. 27 <br><b> E-mail:</b> efimov_aleksei@gmail.com <br> Copyright &copy; 2017 </p>
+    <div>
+      <p id="link"> <a href="http://www.vk.com" target="_blank"> <img src="vk.png"></a><a href="http://www.instagram.com" target="_blank"> <img src="instagram.png"></a><a href="http://www.facebook.com" target="_blank"> <img src="facebook.png"></a></p>
+    </div>
+  </div>
+  <a href="#" class="scrollup">Наверх</a>
+  </body>
+</html>

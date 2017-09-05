@@ -1,16 +1,16 @@
 $(document).ready(function() {
   var dialog = document.querySelector('dialog');
   document.querySelector('#show').onclick = function() {
-        dialog.show();
-    onclick="document.getElementById('window').style.display='none';"
+    dialog.show();
+    $('#overlay').fadeIn(0);
   };
   document.querySelector('#close').onclick = function() {
     dialog.close();
-      };
-
-  function order(){
-    var o = document.getElementById("window")
-    o.innerHTML="Ваш заказ принят!"
-    setTimeout(function(){$('.window').fadeOut('fast')},5000);
-  }
+    $('#overlay').fadeOut(1500);
+  };
+  document.querySelector('#clo').onclick = function() {
+    dialog.close();
+    alert('Ваш заказ принят!');
+    $('#overlay').fadeOut(2000);
+  };
 });
